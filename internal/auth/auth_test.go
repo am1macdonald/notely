@@ -24,7 +24,7 @@ func TestGetAPIKey(t *testing.T) {
 		{input: http.Header{
 			"Authorization": []string{},
 		}, want: ""},
-		{input: http.Header{}, want: "test"},
+		{input: http.Header{}, want: ""},
 	}
 	for _, tc := range tests {
 		got, _ := GetAPIKey(tc.input)
