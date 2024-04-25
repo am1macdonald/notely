@@ -27,8 +27,8 @@ jobs:
       - name: run linter
         run: staticcheck ./...
 
-  tests:
-    name: tests
+  Tests:
+    name: Tests
     runs-on: ubuntu-latest
 
     steps:
